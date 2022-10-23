@@ -1,0 +1,19 @@
+{
+  "name": "Ichimoe-Anki",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Checks with anki to see if a card already exists",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://ichi.moe/cl/qr/?q=*"
+      ]
+    }
+  ]
+}
